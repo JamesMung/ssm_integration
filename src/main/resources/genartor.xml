@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+"http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<context id="fhbegms" defaultModelType="flat">
+		<property name="autoDelimitKeywords" value="true" />
+		
+		<classPathEntry location="E:\Downloads\mvn_repo\mysql\mysql-connector-java\5.1.48\mysql-connector-java-5.1.48.jar"/>
+
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://192.168.1.216:3306/database?characterEncoding=UTF-8"
+			userId="root" password="password" />
+			
+		<javaModelGenerator targetPackage="ssm.integration.test.entity" targetProject="../ssm/integration/test/entity" />
+		
+		<sqlMapGenerator targetPackage="ssm.integration.test.mapper" targetProject="./ssm/integration/test/mapper" />
+			
+		<javaClientGenerator targetPackage="ssm.integration.test.dao" type="XMLMAPPER" targetProject="../ssm/integration/test/dao" />
+		
+		<table tableName="user" enableSelectByExample="false" enableDeleteByExample="false" selectByPrimaryKeyQueryId="false"
+			   enableCountByExample="false" enableUpdateByExample="false" selectByExampleQueryId="false">
+			<property name="useActualColumnNames" value="false"/>
+		</table>
+	</context>
+</generatorConfiguration>
