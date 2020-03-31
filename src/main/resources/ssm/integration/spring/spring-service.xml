@@ -11,4 +11,6 @@
         <property name="dataSource" ref="dataSource" />
     </bean>
 
+    <bean id="springUtils" class="ssm.integration.utils.SpringUtils" />
+
 </beans>
