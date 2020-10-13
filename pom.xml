@@ -11,7 +11,7 @@
   	<compiler_plugin_version>3.7.0</compiler_plugin_version>
   	<compiler_version>1.8</compiler_version>
   	<tomcat_plugin_version>2.2</tomcat_plugin_version>
-  	<junit_version>4.12</junit_version>
+  	<junit_version>4.13.1</junit_version>
   	<jstl_version>1.2</jstl_version>
   	<spring_version>5.2.5.RELEASE</spring_version>
   	<servlet_version>3.1.0</servlet_version>
